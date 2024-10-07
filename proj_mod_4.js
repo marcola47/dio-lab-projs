@@ -1,7 +1,6 @@
 const prompt = require('prompt-sync')();
-
-let xp, rank;
 const name = prompt("Qual seu nome? ")
+let xp, rank;
 
 do {
   xp = prompt("Qual seu nivel de XP? (Somente números positivos) ");
