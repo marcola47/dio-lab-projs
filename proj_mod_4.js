@@ -4,35 +4,35 @@ let xp, rank;
 const name = prompt("Qual seu nome? ")
 
 do {
-  xp = prompt("Qual seu nivel de XP? (Somente números) ");
-} while ((/[a-zA-Z]/).test(xp))
+  xp = prompt("Qual seu nivel de XP? (Somente números positivos) ");
+} while ((/[a-zA-Z]/).test(xp) || parseInt(xp) < 0)
 
 switch (true) {
-  case xp < 1000: 
+  case xp <= 1000: 
     rank = "Ferro"; 
     break;
 
-  case xp < 2000: 
+  case xp <= 2000: 
     rank = "Bronze"; 
     break;
 
-  case xp < 5000: 
+  case xp <= 5000: 
     rank = "Prata"; 
     break;
 
-  case xp < 7000: 
+  case xp <= 7000: 
     rank = "Ouro"; 
     break;
 
-  case xp < 8000: 
+  case xp <= 8000: 
     rank = "Platina"; 
     break;
 
-  case xp < 9000: 
+  case xp <= 9000: 
     rank = "Ascendente"; 
     break;
 
-  case xp < 10000: 
+  case xp <= 10000: 
     rank = "Imortal"; 
     break;
 
